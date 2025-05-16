@@ -1,0 +1,11 @@
+C:\Users\souza\Downloads\ofuscadorlgpd_v1.1\src\main\java\com\suaempresa\ofuscadorlgpd\MainExemplo.java
+C:\Users\souza\Downloads\ofuscadorlgpd_v1.1\src\main\java\com\suaempresa\ofuscadorlgpd\modelo\ProdutoNaoOfuscavel.java
+C:\Users\souza\Downloads\ofuscadorlgpd_v1.1\src\main\java\com\suaempresa\ofuscadorlgpd\anotacoes\Ofuscavel.java
+C:\Users\souza\Downloads\ofuscadorlgpd_v1.1\src\main\java\com\suaempresa\ofuscadorlgpd\modelo\Pessoa.java
+C:\Users\souza\Downloads\ofuscadorlgpd_v1.1\src\main\java\com\suaempresa\ofuscadorlgpd\strategy\EstrategiaOfuscacao.java
+C:\Users\souza\Downloads\ofuscadorlgpd_v1.1\src\main\java\com\suaempresa\ofuscadorlgpd\anotacoes\DadosSensiveis.java
+C:\Users\souza\Downloads\ofuscadorlgpd_v1.1\src\main\java\com\suaempresa\ofuscadorlgpd\core\ProcessadorOfuscacao.java
+C:\Users\souza\Downloads\ofuscadorlgpd_v1.1\src\main\java\com\suaempresa\ofuscadorlgpd\strategy\impl\SubstituirPorFixoStrategy.java
+C:\Users\souza\Downloads\ofuscadorlgpd_v1.1\src\main\java\com\suaempresa\ofuscadorlgpd\strategy\impl\MascararParcialmenteStrategy.java
+C:\Users\souza\Downloads\ofuscadorlgpd_v1.1\src\main\java\com\suaempresa\ofuscadorlgpd\strategy\TipoEstrategia.java
+C:\Users\souza\Downloads\ofuscadorlgpd_v1.1\src\main\java\com\suaempresa\ofuscadorlgpd\strategy\impl\HashSha256Strategy.java
