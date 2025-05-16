@@ -17,5 +17,8 @@ public enum TipoEstrategia {
     /**
      * Substitui o valor original do campo por uma string fixa.
      */
-    SUBSTITUIR_POR_FIXO
+    SUBSTITUIR_POR_FIXO,
+
+    TO_STRING_OFUSCADO
+
 }

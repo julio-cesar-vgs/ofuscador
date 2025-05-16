@@ -23,12 +23,35 @@ class HashSha256StrategyTest {
     void setUp() {
         strategy = new HashSha256Strategy();
         mockConfig = new DadosSensiveis() { // Mock simples
-            @Override public TipoEstrategia estrategia() { return TipoEstrategia.HASH_SHA256; }
-            @Override public String valorFixo() { return ""; }
-            @Override public int caracteresVisiveisInicio() { return 0; }
-            @Override public int caracteresVisiveisFim() { return 0; }
-            @Override public char caractereMascaramento() { return '*'; }
-            @Override public Class<? extends Annotation> annotationType() { return DadosSensiveis.class; }
+            @Override
+            public TipoEstrategia estrategia() {
+                return TipoEstrategia.HASH_SHA256;
+            }
+
+            @Override
+            public String valorFixo() {
+                return "";
+            }
+
+            @Override
+            public int caracteresVisiveisInicio() {
+                return 0;
+            }
+
+            @Override
+            public int caracteresVisiveisFim() {
+                return 0;
+            }
+
+            @Override
+            public char caractereMascaramento() {
+                return '*';
+            }
+
+            @Override
+            public Class<? extends Annotation> annotationType() {
+                return DadosSensiveis.class;
+            }
         };
     }
 

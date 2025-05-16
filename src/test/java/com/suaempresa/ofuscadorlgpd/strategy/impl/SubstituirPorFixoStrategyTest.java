@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import java.lang.annotation.Annotation;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @DisplayName("Testes para SubstituirPorFixoStrategy")
 class SubstituirPorFixoStrategyTest {
@@ -22,12 +22,35 @@ class SubstituirPorFixoStrategyTest {
 
     private DadosSensiveis criarMockDadosSensiveis(String valorFixo) {
         return new DadosSensiveis() {
-            @Override public TipoEstrategia estrategia() { return TipoEstrategia.SUBSTITUIR_POR_FIXO; }
-            @Override public String valorFixo() { return valorFixo; }
-            @Override public int caracteresVisiveisInicio() { return 0; }
-            @Override public int caracteresVisiveisFim() { return 0; }
-            @Override public char caractereMascaramento() { return '*'; }
-            @Override public Class<? extends Annotation> annotationType() { return DadosSensiveis.class; }
+            @Override
+            public TipoEstrategia estrategia() {
+                return TipoEstrategia.SUBSTITUIR_POR_FIXO;
+            }
+
+            @Override
+            public String valorFixo() {
+                return valorFixo;
+            }
+
+            @Override
+            public int caracteresVisiveisInicio() {
+                return 0;
+            }
+
+            @Override
+            public int caracteresVisiveisFim() {
+                return 0;
+            }
+
+            @Override
+            public char caractereMascaramento() {
+                return '*';
+            }
+
+            @Override
+            public Class<? extends Annotation> annotationType() {
+                return DadosSensiveis.class;
+            }
         };
     }
 

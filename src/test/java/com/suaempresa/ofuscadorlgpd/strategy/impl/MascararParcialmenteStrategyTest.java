@@ -10,7 +10,8 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import java.lang.annotation.Annotation;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 @DisplayName("Testes para MascararParcialmenteStrategy")
 class MascararParcialmenteStrategyTest {
@@ -25,12 +26,35 @@ class MascararParcialmenteStrategyTest {
     // Método auxiliar para criar um mock da anotação DadosSensiveis
     private DadosSensiveis criarMockDadosSensiveis(int inicio, int fim, char mascara) {
         return new DadosSensiveis() {
-            @Override public TipoEstrategia estrategia() { return TipoEstrategia.MASCARAR_PARCIALMENTE; }
-            @Override public String valorFixo() { return ""; }
-            @Override public int caracteresVisiveisInicio() { return inicio; }
-            @Override public int caracteresVisiveisFim() { return fim; }
-            @Override public char caractereMascaramento() { return mascara; }
-            @Override public Class<? extends Annotation> annotationType() { return DadosSensiveis.class; }
+            @Override
+            public TipoEstrategia estrategia() {
+                return TipoEstrategia.MASCARAR_PARCIALMENTE;
+            }
+
+            @Override
+            public String valorFixo() {
+                return "";
+            }
+
+            @Override
+            public int caracteresVisiveisInicio() {
+                return inicio;
+            }
+
+            @Override
+            public int caracteresVisiveisFim() {
+                return fim;
+            }
+
+            @Override
+            public char caractereMascaramento() {
+                return mascara;
+            }
+
+            @Override
+            public Class<? extends Annotation> annotationType() {
+                return DadosSensiveis.class;
+            }
         };
     }
 
